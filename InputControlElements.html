@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <input type="text">
+    <input type="text" size="50">
+    <input type="checkbox">
+    <input type="radio">
+    <input type="radio" name="color" id="red" value="#F00">
+    <input type="radio" name="color" id="green" value="#0F0">
+    <input type="radio" name="color" id="blue" value="#00F">
+    <input checked>
+    <input checked="">
+    <input checked="checked">
+    <input checked="ChEcKeD">
+    <input type="checkbox" name="color" value="#F00" id="red">
+    <label for="red">Red</label>
+    <fieldset>
+        <legend>Theme color:</legend>
+        <p>
+            <input type="radio" name="color" id="red" value="#F00">
+            <label for="red">Red</label>
+        </p>
+        <p>
+            <input type="radio" name="color" id="green" value="#0F0">
+            <label for="green">Green</label>
+        </p>
+        <p>
+            <input type="radio" name="color" id="blue" value="#00F">
+            <label for="blue">Blue</label>
+        </p>
+    </fieldset>
+
+    <dl>
+        <dt>name 1</dt>
+        <dd>value for 1</dd>
+        <dt>name 2</dt>
+        <dd>value for 2</dd>
+    </dl>
+    <dl>
+        <dt>name 1</dt>
+        <dt>name 2</dt>
+        <dd>value for 1 and 2</dd>
+        <dt>name 3</dt>
+        <dd>value for 3</dd>
+        <dd>value for 3</dd>
+    </dl>
+    <table>
+        <tr>
+            <th>Heading 1/Column 1</th>
+            <th>Heading 2/Column 2</th>
+        </tr>
+        <tr>
+            <td>Row 1 Data Column 1</td>
+            <td>Row 1 Data Column 2</td>
+        </tr>
+        <tr>
+            <td>Row 2 Data Column 1</td>
+            <td>Row 2 Data Column 2</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>row 1 col 1</td>
+            <td>row 1 col 2</td>
+            <td>row 1 col 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">This second row spans all three columns</td>
+        </tr>
+        <tr>
+            <td rowspan="2">This cell spans two rows</td>
+            <td>row 3 col 2</td>
+            <td>row 3 col 3</td>
+        </tr>
+        <tr>
+            <td>row 4 col 2</td>
+            <td>row 4 col 3</td>
+        </tr>
+        <colgroup>
+            <col id="MySpecialColumn" />
+            <col />
+        </colgroup>
+        <colgroup>
+            <col class="CoolColumn" />
+            <col class="NeatColumn" span="2" />
+        </colgroup>
+    </table>
+    <table>
+        <caption>Table Title</caption>
+        <!--| caption is the first child of table |-->
+        <thead>
+            <!--======================| thead is after caption |-->
+            <tr>
+                <th>Header content 1</th>
+                <th>Header content 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--======================| tbody is after thead |-->
+            <tr>
+                <td>Body content 1</td>
+                <td>Body content 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!--| tfoot can be placed before or after tbody, but not in a group of tbody. |-->
+            <!--| Regardless where tfoot is in markup, it is rendered at the bottom. |-->
+            <tr>
+                <td>Footer content 1</td>
+                <td>Footer content 2</td>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                <th scope="col">Column Heading 1</th>
+                <th scope="col">Column Heading 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Row Heading 1</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">Row Heading 2</th>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- I'm an HTML comment! -->
+    <h1>This part will be displayed
+        <!-- while this will not be displayed -->.</h1>
+    <!-- This is a multiline HTML comment.  Whatever is in here will not be rendered by the browser.  You can "comment out" entire sections of HTML code.-->
+    <h1 <!-- testAttribute="something" -->>This will not work</h1>
+    <!-- Use an HTML comment to nullify the newline character below: -->
+    <a href="#">I hope there will be no extra whitespace after this!</a>
+    <!----><button>Foo</button>
+    <hr>
+    <!-- Without it, you can notice a small formatting difference: -->
+    <a href="#">I hope there will be no extra whitespace after this!</a><button>Foo</button>
+    <div id="container"> ... </div>
+    <div id="999"> ... </div>
+    <div id="#%LV-||"> ... </div>
+    <div id="____V"> ... </div>
+    <div id="⌘⌥"> ... </div>
+    <div id="♥"> ... </div>
+    <div id="{}"> ... </div>
+    <div id="©"> ... </div>
+    <div id="♤₩¤☆€~¥"> ... </div>
+    <img sizes="(min-width: 1200px) 580px,(min-width: 640px) 48vw,98vw"
+        srcset="img/hello-300.jpg 300w,img/hello-600.jpg 600w,img/hello-900.jpg 900w,img/hello-1200.jpg 1200w"
+        src="img/hello-900.jpg" alt="hello">
+    <picture>
+        <source media="(min-width: 600px)" srcset="large_image.jpg">
+        <source media="(min-width: 450px)" srcset="small_image.jpg">
+        <img src="default_image.jpg" style="width:auto;">
+    </picture>
+    <fieldset>
+        <legend>Theme color:</legend>
+        <p>
+            <input type="radio" name="color" id="red" value="#F00">
+            <label for="red">Red</label>
+        </p>
+        <p>
+            <input type="radio" name="color" id="green" value="#0F0">
+            <label for="green">Green</label>
+        </p>
+        <p>
+            <input type="radio" name="color" id="blue" value="#00F">
+            <label for="blue">Blue</label>
+        </p>
+    </fieldset>
+    Marks:
+    <input type="number" size="6" name="marks" min="0" max="100" />Subject Feedback:
+    <input type="range" size="2" name="feedback" min="1" max="5" />
+    <input type="file" accept="image/*" title="Only images are allowed">
+    <input type="file" accept="image/*,.rar,application/zip">
+    <form>
+        <input type="text" name="name" required>
+        <input type="email" name="email" required>
+        <input pattern="\d*" name="number" required>
+        <input type="submit" value="Publish">
+        <!-- form will be validated -->
+        <input type="submit" value="Save" formnovalidate>
+        <!-- form will NOT be validated -->
+        <input type="color" name="favcolor" value="#ff0000">
+        <input type="password" name="password">
+        <input type="password" name="password" placeholder="Password">
+        <input type="file" name="fileSubmission">
+    </form>
+    <form action="upload_file.php" method="post" enctype="multipart/form-data"> Select file to upload:
+        <input type="file" name="fileSubmission" id="fileSubmission" multiple accept="image/x-png,image/gif,image/jpeg">
+        <input type="submit" value="Upload your file" name="submit">
+        <input type="button" value="Button Text">
+        <button type="button">Button Text</button>
+        <input type="button" onclick="alert('hello world!')" value="Click Me">
+        <button type="button" onclick="alert('hello world!')">Click Me</button>
+    </form>
+    <input type="submit" value="Submit">
+    <button type="submit">
+        <img src="submit-icon.jpg" /> Submit
+    </button>
+    <input type="reset" value="Reset">
+
+    <input type="hidden" name="inputName" value="inputValue">
+    <input type="tel" value="+8400000000">
+    <input type="email">
+    <input type="email" name="email">
+    <input type="number" value="0" name="quantity">
+    <input type="range" min="" max="" step="" />
+    <input type="search" name="googlesearch">
+    <input type="image" src="img.png" alt="image_name" height="50px" width="50px" />
+    <input type="week" />
+    <input type="url" name="Homepage">
+    <input type="datetime-local" />
+    <input type="month" />
+    <input type="time" />
+    <fieldset>
+        <p><label>Meeting time: <input type=datetime name="meeting.start"></label>
+    </fieldset>
+    <input type="date" />
+    <form action="action.php" method="post" target="_blank" accept-charset="UTF-8"
+        enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+        <!-- form elements -->
+    </form>
+    <form target="_blank"></form>
+    <form method="post" enctype="multipart/form-data" action="upload.php"> <input type="file" name="pic" />
+        <input type="submit" value="Upload" />
+    </form>
+    <article>
+        <p>This doesn't make sense, this article has no real `context`.</p>
+    </article>
+    <main>
+        <p>I'm the main content, I don't need to belong to an article.</p>
+    </main>
+    <section role="main">
+        <p>This section is the main content of this page.</p>
+    </section>
+    <form id="form1" name="form1" oninput="out1.value = parseInt(in1.value, 10) + parseInt(in2.value,10)">
+        <fieldset>
+            <legend>Output Example</legend>
+            <input type="number" id="in1" name="in1" value="0"><br /> +<input type="number" id="in2" name="in2"
+                value="0">
+        </fieldset>
+    </form>
+    <!--[for] attribute enables out1 to display calculations for in1 and in2.-->
+    <!--[form] attribute designates form1 as the form owner of out1 even if it isn't a descendant.-->
+    <output name="out1" for="in1 in2" form="form1">0</output>
+    <video width="480" controls poster="https://archive.org/download/WebmVp8Vorbis/webmvp8.gif">
+        <source src="https: //archive.org/download/WebmVp8Vorbis/webmvp8.webm" type="video/webm">
+        <source src="https: //archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4" type="video/mp4">
+        <source src="https: //archive.org/download/WebmVp8Vorbis/webmvp8.ogv" type="video/ogg"> Your browser
+        doesn't support HTML5 video tag.
+    </video>
+    <select name="">
+        <option value="milk">Milk</option>
+        <optgroup label="Fruits">
+            <option value="banana">Bananas</option>
+            <option value="strawberry">Strawberries</option>
+        </optgroup>
+        <optgroup label="Vegetables" disabled>
+            <option value="carrot">Carrots</option>
+            <option value="zucchini">Zucchini</option>
+        </optgroup>
+    </select>
+    <input list="Languages">
+    <datalist id="Languages">
+        <option value="PHP">
+        <option value="Perl">
+        <option value="Python">
+        <option value="Ruby">
+        <option value="C+">
+    </datalist>
+    <canvas id="myCanvas"> Cannot display graphic. Canvas is not supported by your browser (IE9) </canvas>
+    <p contenteditable> This is an editable paragraph.<span contenteditable="false">But not this.</span></p>
+    <div style="float:left;">Some content on the left.</div>
+    <div style="float:right;">Some content on the right</div>
+    <div role="presentation" style="clear:both;"></div> <!-- Only used to clear floats -->
+    <div role="alert" aria-live="assertive">Your session will expire in 60 seconds.</div>
+    <ul role="menu">
+        <li role="menuitemradio" aria-checked="true">Left</li>
+        <li role="menuitemradio" aria-checked="false">Center</li>
+        <li role="menuitemradio" aria-checked="false">Right</li>
+    </ul>
+    <script>
+
+        var ctx = document.getElementById("myCanvas").getContext("2d");
+        // now we can refer to the canvas's 2D layer context using `ctx`
+
+        ctx.fillStyle = "blue";
+        ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height); // x, y, width, height
+
+        ctx.fillStyle = "red";
+        ctx.fillText("My red canvas with some black text", 70, 50);
+        var canvas = document.querySelector('canvas');
+    </script>
+</body>
+
+</html>
